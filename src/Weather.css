@@ -1,0 +1,80 @@
+.Weather .search-box {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.Weather .compass {
+  color: var(--branding-color);
+  font-size: 35px;
+  position: relative;
+  left: 5px;
+}
+
+.Weather .compass:hover {
+  cursor: pointer;
+}
+
+.Weather .search-button {
+  background-color: var(--branding-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  transition: all 150ms ease-in-out;
+  width: 150px;
+}
+
+.Weather .search-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--branding-color);
+}
+
+.Weather h1 {
+  color: var(--branding-color);
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.Weather h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.Weather h3 {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.Weather h3:first-letter {
+  text-transform: capitalize;
+}
+
+.Weather .current-weather {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.Weather .location-data {
+  margin-left: 20px;
+  max-width: 350px;
+}
+
+.Weather .temp-data {
+  color: var(--branding-color);
+  font-size: 45px;
+  margin-top: 20px;
+  min-width: 150px;
+  padding: 0;
+}
+
+.Weather .temp-scale-selector {
+  font-size: 16px;
+  position: relative;
+  top: -21px;
+}
+
+.Weather .weather-conditions {
+  font-size: 13px;
+  margin-right: 20px;
+  margin-top: 33px;
+  padding: 0;
+}

@@ -1,0 +1,10 @@
+.App {
+  color: var(--text-color);
+  font-family: "Noto Serif JP", serif;
+  margin: 20px auto;
+  max-width: 750px;
+}
+
+.App .card {
+  background: var(--secondary-color);
+}

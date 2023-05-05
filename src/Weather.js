@@ -10,7 +10,7 @@ export default function Weather() {
           <form className="search-box">
             <div className="row">
               <div className="col-1">
-                <i class="fa-regular fa-compass"></i>
+                <i className="fa-regular fa-compass compass"></i>
               </div>
               <div className="col-8">
                 <div className="form-group">
@@ -39,11 +39,14 @@ export default function Weather() {
             <div className="location-data">
               <h1>Austin</h1>
               <h2>Friday 10:00 AM</h2>
-              <h3>Broken clouds</h3>
+              <h3>broken clouds</h3>
             </div>
             <div className="temp-data">
-              <i class="fa-regular fa-cloud"></i>
-              <span>75°F</span>
+              <i className="fa-regular fa-sun"></i>
+              <span>
+                {" "}
+                75<span className="temp-scale-selector"> °F | C</span>
+              </span>
             </div>
             <div className="weather-conditions">
               Humidity: 50% <br />

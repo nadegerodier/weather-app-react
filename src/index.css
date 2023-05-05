@@ -1,0 +1,10 @@
+:root {
+  --branding-color: #ffaaa5;
+  --secondary-color: #fcf8f3;
+  --text-color: #2a363b;
+}
+
+body {
+  background-size: 100%;
+  display: block;
+}

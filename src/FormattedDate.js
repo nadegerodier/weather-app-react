@@ -14,6 +14,14 @@ export default function FormattedDate(props) {
   let day = days[props.date.getDay()];
 
   let hours = props.date.getHours();
+
+  let AmOrPm = "";
+  if (hours > 11) {
+    AmOrPm = "PM";
+  } else {
+    AmOrPm = "AM";
+  }
+
   if (hours > 12) {
     hours = hours - 12;
   }
@@ -24,13 +32,6 @@ export default function FormattedDate(props) {
 
   let minutes = props.date.getMinutes();
   minutes = String(minutes).padStart(2, "0");
-
-  let AmOrPm = "";
-  if (hours > 11) {
-    AmOrPm = "PM";
-  } else {
-    AmOrPm = "AM";
-  }
 
   return (
     <div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 import "./Weather.css";
 
@@ -10,6 +11,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       city: response.data.city,
+      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       temperature: Math.round(response.data.temperature.current),
@@ -53,7 +55,9 @@ export default function Weather(props) {
             <div className="current-weather">
               <div className="location-data">
                 <h1>{weatherData.city}</h1>
-                <h2>Friday 10:00 AM</h2>
+                <h2>
+                  <FormattedDate date={weatherData.date} />
+                </h2>
                 <h3>{weatherData.description}</h3>
               </div>
               <div className="temp-data">
@@ -81,7 +85,6 @@ export default function Weather(props) {
     let units = "imperial";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=${units}`;
     axios.get(`${apiUrl}`).then(updateLocationData);
-
     return "Loading...";
   }
 }

@@ -1,0 +1,9 @@
+.WeatherTemperature .temp-scale-selector {
+  font-size: 16px;
+  position: relative;
+  top: -21px;
+}
+
+.WeatherTemperature .temp-scale-selector a {
+  text-decoration: none;
+}

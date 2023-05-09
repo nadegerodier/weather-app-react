@@ -11,9 +11,10 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const ref = useRef(null);
 
-  function updateLocationData(response) {
+  function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       city: response.data.city,
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
@@ -28,7 +29,7 @@ export default function Weather(props) {
     const apiKey = "4e350df61at74oee42abc35600fd88fb";
     let units = "imperial";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
-    axios.get(`${apiUrl}`).then(updateLocationData);
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function findCityData(event) {
@@ -77,7 +78,7 @@ export default function Weather(props) {
             </form>
             <WeatherInfo data={weatherData} />
             <hr />
-            <WeatherForecast />
+            <WeatherForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>

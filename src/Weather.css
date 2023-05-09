@@ -1,3 +1,15 @@
+.Weather hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--branding-color),
+    transparent
+  );
+  margin-bottom: 40px;
+}
+
 .Weather .search-area {
   margin-bottom: 40px;
   text-align: center;

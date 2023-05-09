@@ -20,6 +20,7 @@ export default function WeatherTemperature(props) {
       <div className="WeatherTemperature">
         {Math.round(props.fahrenheit)}
         <span className="temp-scale-selector">
+          {" "}
           °F |{" "}
           <a href="/" onClick={convertToCelsius}>
             °C
@@ -34,6 +35,7 @@ export default function WeatherTemperature(props) {
         {Math.round(celsius)}
         <span className="temp-scale-selector">
           <a href="/" onClick={convertToFahrenheit}>
+            {" "}
             °F
           </a>{" "}
           | °C

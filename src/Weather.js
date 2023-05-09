@@ -80,6 +80,19 @@ export default function Weather(props) {
             <WeatherForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
+        <footer>
+          <a
+            href="https://github.com/nadegerodier/weather-app-react"
+            target="_blank"
+            className="footer"
+          >
+            Open-source code
+          </a>
+          <span className="footer-by"> by </span>
+          <a href="mailto:nadege.rodier@gmail.com" className="footer">
+            Nadege Rodier
+          </a>
+        </footer>
       </div>
     );
   } else {

@@ -84,6 +84,7 @@ export default function Weather(props) {
           <a
             href="https://github.com/nadegerodier/weather-app-react"
             target="_blank"
+            rel="noreferrer"
             className="footer"
           >
             Open-source code

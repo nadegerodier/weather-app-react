@@ -19,7 +19,10 @@ export default function WeatherInfo(props) {
           <div className="current-weather-icon">
             <WeatherIcon code={props.data.icon} size={64} color="#ffaaa5" />
           </div>
-          <div>{Math.round(props.data.temperature)}</div>
+          <div>
+            {Math.round(props.data.temperature)}
+            <span className="unit"> °F</span>
+          </div>
         </div>
 
         <div className="weather-conditions">

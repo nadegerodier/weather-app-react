@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
-import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -28,16 +27,17 @@ export default function Weather(props) {
     const apiKey = "4e350df61at74oee42abc35600fd88fb";
     let units = "imperial";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+
     axios.get(apiUrl).then(handleResponse);
   }
 
-  function findCityData(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     ref.current.value = "";
     search();
   }
 
-  function findCity(event) {
+  function handleCityChange(event) {
     setCity(event.target.value);
   }
 
@@ -46,7 +46,7 @@ export default function Weather(props) {
       <div className="Weather">
         <div className="card">
           <div className="card-body shadow">
-            <form className="search-area" onSubmit={findCityData}>
+            <form className="search-area" onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-1">
                   <i className="fa-regular fa-compass compass"></i>
@@ -59,7 +59,7 @@ export default function Weather(props) {
                       placeholder="Search for a city"
                       autoFocus="on"
                       autoComplete="off"
-                      onChange={findCity}
+                      onChange={handleCityChange}
                       ref={ref}
                     />
                   </div>

@@ -107,7 +107,12 @@ export default function Weather(props) {
             Open-source code
           </a>
           <span className="footer-by"> by </span>
-          <a href="mailto:nadege.rodier@gmail.com" className="footer">
+          <a
+            href="https://incomparable-starburst-3e5eae.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="footer"
+          >
             Nadege Rodier
           </a>
         </footer>

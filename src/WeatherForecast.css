@@ -8,6 +8,10 @@
   margin-bottom: 10px;
 }
 
-.WeatherForecast-temperatures-min {
+.WeatherForecast-temperatures {
+  font-size: 18px;
+}
+
+.WeatherForecast-temperature-min {
   opacity: 0.5;
 }

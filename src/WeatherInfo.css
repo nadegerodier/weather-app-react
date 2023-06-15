@@ -108,6 +108,10 @@
     font-size: 30px;
   }
 
+  .WeatherInfo .current-weather-icon {
+    top: -10px;
+  }
+
   .WeatherInfo .unit {
     font-size: 10px;
     top: -14px;
@@ -133,6 +137,10 @@
 
   .WeatherInfo .temp-data {
     font-size: 24px;
+  }
+
+  .WeatherInfo .current-weather-icon {
+    top: -15px;
   }
 
   .WeatherInfo .unit {

@@ -102,16 +102,14 @@ export default function Weather(props) {
             href="https://github.com/nadegerodier/weather-app-react"
             target="_blank"
             rel="noreferrer"
-            className="footer"
           >
             Open-source code
-          </a>
-          <span className="footer-by"> by </span>
+          </a>{" "}
+          by{" "}
           <a
             href="https://incomparable-starburst-3e5eae.netlify.app/"
             target="_blank"
             rel="noreferrer"
-            className="footer"
           >
             Nadege Rodier
           </a>

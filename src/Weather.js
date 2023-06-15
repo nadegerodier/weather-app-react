@@ -68,7 +68,7 @@ export default function Weather(props) {
                     onClick={getCurrentLocation}
                   ></i>
                 </div>
-                <div className="col-8">
+                <div className="col-7 col-sm-8">
                   <div className="form-group">
                     <input
                       type="text"

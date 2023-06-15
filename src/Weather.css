@@ -53,3 +53,41 @@
   background-color: var(--secondary-color);
   color: var(--branding-color);
 }
+
+@media (max-width: 768px) {
+  .Weather footer {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .Weather .card-body {
+    padding: 10px;
+  }
+
+  .Weather .compass {
+    font-size: 28px;
+    top: 4px;
+  }
+
+  .Weather .search-button {
+    left: -15px;
+    position: relative;
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Weather footer {
+    font-size: 12px;
+  }
+
+  .Weather .compass {
+    left: -3px;
+  }
+}
+
+@media (max-width: 420px) {
+  .Weather footer {
+    font-size: 12px;
+  }
+}

@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.WeatherForecast .WeatherForecast-day {
+.WeatherForecast-day {
   margin-bottom: 10px;
 }
 
@@ -14,4 +14,38 @@
 
 .WeatherForecast-temperature-min {
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .WeatherForecast {
+    font-size: 16px;
+  }
+
+  .WeatherForecast-columns {
+    padding: 0;
+  }
+
+  .WeatherForecast-temperatures {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .WeatherForecast {
+    font-size: 13px;
+  }
+
+  .WeatherForecast-temperatures {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .WeatherForecast {
+    font-size: 12px;
+  }
+
+  .WeatherForecast-temperatures {
+    font-size: 10px;
+  }
 }

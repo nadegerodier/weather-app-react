@@ -56,3 +56,91 @@
   margin-top: 33px;
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .WeatherInfo h1 {
+    font-size: 40px;
+  }
+
+  .WeatherInfo h2 {
+    font-size: 16px;
+  }
+
+  .WeatherInfo h3 {
+    font-size: 14px;
+  }
+
+  .WeatherInfo .location-data {
+    margin-left: 5px;
+  }
+
+  .WeatherInfo .temp-data {
+    font-size: 40px;
+    min-width: 120px;
+    position: relative;
+  }
+
+  .WeatherInfo .unit {
+    font-size: 14px;
+    top: -19px;
+  }
+
+  .WeatherInfo .weather-conditions {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .WeatherInfo h1 {
+    font-size: 30px;
+  }
+
+  .WeatherInfo h2 {
+    font-size: 12px;
+  }
+
+  .WeatherInfo h3 {
+    font-size: 11px;
+  }
+
+  .WeatherInfo .temp-data {
+    font-size: 30px;
+  }
+
+  .WeatherInfo .unit {
+    font-size: 10px;
+    top: -14px;
+  }
+
+  .WeatherInfo .weather-conditions {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 420px) {
+  .WeatherInfo h1 {
+    font-size: 24px;
+  }
+
+  .WeatherInfo h2 {
+    font-size: 11px;
+  }
+
+  .WeatherInfo h3 {
+    font-size: 10px;
+  }
+
+  .WeatherInfo .temp-data {
+    font-size: 24px;
+  }
+
+  .WeatherInfo .unit {
+    font-size: 8px;
+    top: -11px;
+  }
+
+  .WeatherInfo .weather-conditions {
+    font-size: 7px;
+  }
+}

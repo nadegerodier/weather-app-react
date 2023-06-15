@@ -1,6 +1,6 @@
 .WeatherInfo h1 {
   color: var(--branding-color);
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 5px;
 }
 
@@ -26,7 +26,7 @@
 
 .WeatherInfo .location-data {
   margin-left: 20px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .WeatherInfo .temp-data {

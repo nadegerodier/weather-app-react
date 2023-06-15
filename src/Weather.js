@@ -65,6 +65,7 @@ export default function Weather(props) {
                 <div className="col-1">
                   <i
                     className="fa-regular fa-compass compass"
+                    title="Get the weather for your current location"
                     onClick={getCurrentLocation}
                   ></i>
                 </div>
@@ -110,6 +111,7 @@ export default function Weather(props) {
             href="https://incomparable-starburst-3e5eae.netlify.app/"
             target="_blank"
             rel="noreferrer"
+            title="Check out my portfolio!"
           >
             Nadege Rodier
           </a>

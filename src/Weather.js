@@ -108,7 +108,7 @@ export default function Weather(props) {
           </a>{" "}
           by{" "}
           <a
-            href="https://incomparable-starburst-3e5eae.netlify.app/"
+            href="https://www.nadegerodier.com/"
             target="_blank"
             rel="noreferrer"
             title="Check out my portfolio!"

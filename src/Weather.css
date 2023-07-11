@@ -22,7 +22,7 @@
 }
 
 .Weather footer a:hover {
-  color: var(--branding-color);
+  color: #fd847e;
 }
 
 .Weather .search-area {

@@ -15,7 +15,8 @@
 }
 
 .Weather .search-button {
-  background-color: var(--branding-color);
+  background: var(--branding-color);
+  border-color: var(--branding-color);
   color: var(--secondary-color);
   font-size: 16px;
   transition: all 150ms ease-in-out;
@@ -24,6 +25,7 @@
 
 .Weather .search-button:hover {
   background-color: var(--secondary-color);
+  border-color: var(--branding-color);
   color: var(--branding-color);
 }
 
